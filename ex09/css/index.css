@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+.highlight,
+.current a {
+  color: #ff561c;
+}
+#header  {
+  display: flex;
+  
+  background: cornflowerblue;
+  height: 15vh;
+}
+#branding {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background: #181818;
+  color: #fff;
+  overflow: hidden;
+}
+
+#showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: url("/ex09/img/gigi-logo.png") no-repeat center center / cover;
+  text-align: center;
+}
+
+#newsletter h1 {
+    display: flex;
+    justify-content: flex-start;
+}
+#newsletter form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#boxes .container {
+  display: flex;
+  flex-direction: row;
+}
+
+#boxes .box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  width: 30%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background: #ff561c;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+}
