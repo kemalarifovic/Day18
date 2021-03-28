@@ -26,17 +26,10 @@ function* insideGenerator3() {
 let iterator = myGenerator();
 
 let fifteenArray = [];
-let fifteenArrayStr = "";
-for (let i = 0; i <= 15; i++) {
-  let { value } = iterator.next();
-  fifteenArray.push(value);
-  if (value) {
-    fifteenArrayStr += value + "#, ";
-  } else {
-    fifteenArrayStr += value + "!";
-  }
+for (let i = 0; i < 16; i++) {
+  let iter = iterator.next();
+  fifteenArray[i] = iter.value + (iter.done ? "!" : "#");
 }
-//console.log(fifteenArray);
-console.log(fifteenArrayStr);
+  console.log(fifteenArray.join(", "));
 // Only change code above this line
 module.exports = { fifteenArray, myGenerator };
